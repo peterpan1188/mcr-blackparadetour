@@ -14,6 +14,9 @@ import {
   X,
   ChevronRight
 } from 'lucide-react';
+import newsTourImage from '../assets/black-parade-2.png';
+import newsMerchImage from '../assets/maxresdefault.jpg';
+import newsMessageImage from '../assets/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159.webp';
 
 const TOUR_DATES = [
   { id: 1, date: 'OCT 24', city: 'LAS VEGAS', venue: 'When We Were Young Festival', status: 'SOLD OUT' },
@@ -38,7 +41,7 @@ const Navbar = () => {
         My Chemical Romance
       </motion.div>
       
-      <div className="hidden md:flex gap-12 text-[10px] uppercase tracking-[0.4em] font-medium">
+      <div className="hidden md:flex gap-12 text-[20px] uppercase tracking-[0.4em] font-medium">
         <a href="#news" className="hover:text-mcr-red transition-colors">News</a>
         <a href="#tour" className="hover:text-mcr-red transition-colors">Tour</a>
         <a href="#music" className="hover:text-mcr-red transition-colors">Music</a>
@@ -49,7 +52,7 @@ const Navbar = () => {
         <motion.button 
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="hidden md:block px-6 py-2 border border-white/10 rounded-none text-[10px] uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
+          className="hidden md:block px-6 py-2 border border-white/10 rounded-none text-[16px] uppercase tracking-widest hover:bg-white hover:text-black transition-colors"
         >
           Store
         </motion.button>
@@ -77,9 +80,27 @@ const Navbar = () => {
 
 const NewsSection = () => {
   const news = [
-    { date: '2026.03.01', title: 'The Black Parade Returns: World Tour Announced', category: 'TOUR' },
-    { date: '2026.02.15', title: 'Limited Edition Vinyl Box Set Pre-Order', category: 'MERCH' },
-    { date: '2026.01.10', title: 'A Message from the Band', category: 'NEWS' },
+    {
+      date: '2026.03.01',
+      title: 'The Black Parade Returns: World Tour Announced',
+      category: 'TOUR',
+      image: newsTourImage,
+      imageAlt: 'The Black Parade world tour key visual',
+    },
+    {
+      date: '2026.02.15',
+      title: 'Limited Edition Vinyl Box Set Pre-Order',
+      category: 'MERCH',
+      image: newsMerchImage,
+      imageAlt: 'Limited edition vinyl box set promo image',
+    },
+    {
+      date: '2026.01.10',
+      title: 'A Message from the Band',
+      category: 'NEWS',
+      image: newsMessageImage,
+      imageAlt: 'Band announcement visual',
+    },
   ];
 
   return (
@@ -98,6 +119,13 @@ const NewsSection = () => {
             transition={{ delay: i * 0.1 }}
             className="group cursor-pointer"
           >
+            <div className="mb-6 aspect-[16/10] overflow-hidden border border-mcr-red/20 bg-black">
+              <img
+                src={item.image}
+                alt={item.imageAlt}
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+              />
+            </div>
             <div className="text-[10px] text-mcr-red mb-4 tracking-[0.3em] uppercase">{item.category} — {item.date}</div>
             <h3 className="text-2xl font-sans uppercase tracking-wider group-hover:text-mcr-red transition-colors leading-tight">
               {item.title}
@@ -148,7 +176,7 @@ const Hero = () => {
         className="absolute inset-0 z-0"
       >
         <img 
-          src="https://ais-dev-ktxd37xvc3lw2r37wqjslo-540073296507.asia-southeast1.run.app/api/attachments/Step-57-0.png" 
+          src="assets/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159.webp" 
           alt="Gerard Way - The Black Parade" 
           className="w-full h-full object-cover opacity-80"
           referrerPolicy="no-referrer"
@@ -164,7 +192,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-[12px] uppercase tracking-[0.8em] mb-6 block font-medium text-mcr-red"
+          className="text-[24px] uppercase tracking-[0.8em] mb-6 block font-medium text-white"
         >
           Welcome to the
         </motion.span>
@@ -172,7 +200,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="text-[14vw] md:text-[10vw] font-serif leading-none mb-8 tracking-tight"
+          className="text-[14vw] md:text-[160px] font-serif leading-none mb-48 tracking-tight"
         >
           Black Parade <br />
           <span className="text-mcr-silver opacity-80">World Tour</span>
@@ -184,13 +212,13 @@ const Hero = () => {
           transition={{ delay: 0.8 }}
           className="flex flex-col md:flex-row items-center justify-center gap-8 mt-12"
         >
-          <div className="flex items-center gap-3 text-[10px] tracking-[0.3em] uppercase opacity-60">
-            <Calendar size={14} />
+          <div className="flex items-center gap-3 text-[44px] tracking-[0.3em] uppercase opacity-60">
+            <Calendar size={24} />
             <span>2026</span>
           </div>
           <div className="w-px h-4 bg-mcr-red/40 hidden md:block" />
-          <div className="flex items-center gap-3 text-[10px] tracking-[0.3em] uppercase opacity-60">
-            <MapPin size={14} />
+          <div className="flex items-center gap-3 text-[44px] tracking-[0.3em] uppercase opacity-60">
+            <MapPin size={24} />
             <span>Worldwide</span>
           </div>
         </motion.div>

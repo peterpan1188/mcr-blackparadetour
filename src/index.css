@@ -18,7 +18,7 @@
   body::before {
     content: "";
     @apply fixed inset-0 z-[100] pointer-events-none opacity-[0.03];
-    background-image: url("../assets/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159.webp");
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
   }
 }
 
@@ -35,7 +35,7 @@
 }
 
 .mcr-logo {
-  @apply font-sans uppercase tracking-[0.5em] text-sm;
+  @apply font-sans uppercase tracking-[0.5em] text-xl;
 }
 
 .mask-fade-bottom {
