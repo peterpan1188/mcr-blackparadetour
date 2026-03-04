@@ -176,7 +176,7 @@ const Hero = () => {
         className="absolute inset-0 z-0"
       >
         <img 
-          src="assets/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159.webp" 
+          src="https://res.cloudinary.com/dqkwcbbe5/image/upload/v1772632846/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159_i81bxm.webp" 
           alt="Gerard Way - The Black Parade" 
           className="w-full h-full object-cover opacity-80"
           referrerPolicy="no-referrer"
