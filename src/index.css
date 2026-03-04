@@ -18,7 +18,7 @@
   body::before {
     content: "";
     @apply fixed inset-0 z-[100] pointer-events-none opacity-[0.03];
-    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    background-image: url("../assets/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159.webp");
   }
 }
 
