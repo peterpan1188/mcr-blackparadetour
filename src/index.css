@@ -19,6 +19,18 @@
 }
 
 @layer base {
+  html {
+    background: #000;
+    scrollbar-gutter: stable;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
+    overflow-x: clip;
+  }
+
   body {
     @apply bg-black text-white antialiased selection:bg-mcr-red selection:text-white relative font-sans;
   }
@@ -26,7 +38,12 @@
   body::before {
     content: "";
     @apply fixed inset-0 z-[100] pointer-events-none opacity-[0.03];
-    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    background-image:
+      radial-gradient(circle at 20% 24%, rgba(255, 255, 255, 0.95) 0 1px, transparent 1.6px),
+      radial-gradient(circle at 76% 18%, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.6px),
+      radial-gradient(circle at 62% 72%, rgba(255, 255, 255, 0.82) 0 1px, transparent 1.6px),
+      radial-gradient(circle at 14% 82%, rgba(255, 255, 255, 0.72) 0 1px, transparent 1.4px);
+    background-size: 180px 180px, 240px 240px, 300px 300px, 220px 220px;
   }
 }
 

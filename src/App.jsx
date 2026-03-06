@@ -18,6 +18,7 @@ import {
 import newsTourImage from '../assets/black-parade-2.png';
 import newsMerchImage from '../assets/maxresdefault.jpg';
 import newsMessageImage from '../assets/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159.webp';
+import mcrLogo from '../assets/640px-My_Chemical_Romance_logo.png';
 
 const TOUR_DATES = [
   { id: 1, date: 'OCT 24', city: 'LAS VEGAS', venue: 'When We Were Young Festival', status: 'SOLD OUT' },
@@ -94,11 +95,12 @@ const Navbar = () => {
           className="pointer-events-none absolute left-1/2 top-1/2 mt-2 md:mt-3 -translate-x-1/2 -translate-y-1/2"
         >
           <img
-            src="https://res.cloudinary.com/dqkwcbbe5/image/upload/v1772757588/My_Chemical_Romance_logo_dju17c.png"
+            src={mcrLogo}
             alt="My Chemical Romance"
             className="h-[72px] md:h-[88px] lg:h-[100px] w-auto object-contain"
             loading="eager"
             decoding="async"
+            fetchPriority="high"
           />
         </motion.div>
 
@@ -238,10 +240,12 @@ const Hero = () => {
         className="absolute inset-0 z-0"
       >
         <img 
-          src="https://res.cloudinary.com/dqkwcbbe5/image/upload/v1772632846/welcome_to_the_black_parade_by_kitkirkilkol-d8yg6me-e1584285648159_i81bxm.webp" 
+          src={newsMessageImage}
           alt="Gerard Way - The Black Parade" 
           className="w-full h-full object-cover opacity-80"
-          referrerPolicy="no-referrer"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black" />
       </motion.div>
