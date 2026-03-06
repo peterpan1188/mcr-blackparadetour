@@ -266,7 +266,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="text-[40px] md:text-[160px] font-serif leading-none mb-48 tracking-tight"
+          className="text-[14vw] md:text-[100px] font-serif leading-none mb-48 tracking-tight"
         >
           Black Parade <br />
           <span className="text-[red] opacity-80">World Tour</span>
