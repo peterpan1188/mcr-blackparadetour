@@ -79,7 +79,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-6 transition-all duration-300 ${isScrolled ? 'bg-black/85 backdrop-blur-md border-b border-white/10 shadow-[0_8px_26px_rgba(0,0,0,0.45)]' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-3 md:py-4 transition-all duration-300 ${isScrolled ? 'bg-black/85 backdrop-blur-md border-b border-white/10 shadow-[0_8px_26px_rgba(0,0,0,0.45)]' : 'bg-transparent'}`}>
       <div className="mx-auto grid max-w-[120rem] grid-cols-[1fr_auto_1fr] items-center gap-4">
         <div className="hidden md:flex justify-start gap-10 text-[18px] uppercase tracking-[0.3em] font-medium">
           <a href="#news" className="hover:text-mcr-red transition-colors">News</a>
@@ -91,12 +91,12 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="justify-self-center"
+          className="justify-self-center w-[220px] md:w-[300px] lg:w-[360px] h-[52px] md:h-[68px] lg:h-[80px] overflow-hidden flex items-start"
         >
           <img
             src="https://res.cloudinary.com/dqkwcbbe5/image/upload/v1772757588/My_Chemical_Romance_logo_dju17c.png"
             alt="My Chemical Romance"
-            className="h-[5.25rem] md:h-[7.5rem] lg:h-[9rem] w-auto max-w-[72vw] md:max-w-[690px] object-contain"
+            className="w-full h-auto object-contain object-top"
             loading="eager"
             decoding="async"
           />
