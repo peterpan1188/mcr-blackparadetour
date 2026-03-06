@@ -92,7 +92,7 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="pointer-events-none absolute left-1/2 top-1/2 mt-2 md:mt-3 -translate-x-1/2 -translate-y-1/2"
+          className="pointer-events-none absolute left-1/2 top-1/2 mt-2 -translate-x-1/2 -translate-y-1/2"
         >
           <img
             src={mcrLogo}
