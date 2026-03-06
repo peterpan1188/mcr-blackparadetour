@@ -80,8 +80,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-2 md:py-3 transition-all duration-300 ${isScrolled ? 'bg-black/85 backdrop-blur-md border-b border-white/10 shadow-[0_8px_26px_rgba(0,0,0,0.45)]' : 'bg-transparent'}`}>
-      <div className="relative mx-auto flex max-w-[90rem] min-h-[52px] md:min-h-[64px] items-center justify-between">
+    <nav className={`fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-3 md:py-4 transition-all duration-300 ${isScrolled ? 'bg-black/85 backdrop-blur-md border-b border-white/10 shadow-[0_8px_26px_rgba(0,0,0,0.45)]' : 'bg-transparent'}`}>
+      <div className="relative mx-auto flex max-w-[90rem] min-h-[72px] md:min-h-[88px] lg:min-h-[96px] items-center justify-between">
         <div className="relative z-10 hidden md:flex justify-start gap-8 text-[18px] uppercase tracking-[0.3em] font-medium">
           <a href="#news" className="hover:text-mcr-red transition-colors">News</a>
           <a href="#tour" className="hover:text-mcr-red transition-colors">Tour</a>
@@ -92,12 +92,12 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="pointer-events-none absolute left-1/2 top-1/2 mt-2 -translate-x-1/2 -translate-y-1/2"
+          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         >
           <img
             src={mcrLogo}
             alt="My Chemical Romance"
-            className="h-[72px] md:h-[88px] lg:h-[100px] w-auto object-contain"
+            className="h-[60px] md:h-[74px] lg:h-[84px] w-auto object-contain"
             loading="eager"
             decoding="async"
             fetchPriority="high"
