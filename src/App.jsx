@@ -643,7 +643,7 @@ export default function App() {
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-mcr-red">Opening Night</p>
                 <div className="mt-2 flex items-end justify-between gap-3">
-                  <h3 className="text-lg md:text-2xl font-serif uppercase leading-none">Las Vegas</h3>
+                  <h3 className="text-lg md:text-xl font-serif uppercase leading-none">Las Vegas</h3>
                   <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-white/75 whitespace-nowrap">Oct 24, 2026</span>
                 </div>
               </div>
@@ -655,7 +655,7 @@ export default function App() {
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-mcr-red">Helena Live Cut</p>
                 <div className="mt-2 flex items-end justify-between gap-3">
-                  <h3 className="text-lg md:text-2xl font-serif uppercase leading-none">Double Vocal Set</h3>
+                  <h3 className="text-lg md:text-xl font-serif uppercase leading-none">Double Vocal Set</h3>
                   <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-white/75 whitespace-nowrap">Tokyo, Japan 2019</span>
                 </div>
               </div>
@@ -667,7 +667,7 @@ export default function App() {
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-mcr-red">Crowd Energy</p>
                 <div className="mt-2 flex items-end justify-between gap-3">
-                  <h3 className="text-lg md:text-2xl font-serif uppercase leading-none">MCRMY Rise</h3>
+                  <h3 className="text-lg md:text-xl font-serif uppercase leading-none">MCRMY Rise</h3>
                   <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-white/75 whitespace-nowrap">Chicago, 2026</span>
                 </div>
               </div>
@@ -679,7 +679,7 @@ export default function App() {
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-mcr-red">Smoke + Lights</p>
                 <div className="mt-2 flex items-end justify-between gap-3">
-                  <h3 className="text-lg md:text-2xl font-serif uppercase leading-none">Main Stage</h3>
+                  <h3 className="text-lg md:text-xl font-serif uppercase leading-none">Main Stage</h3>
                   <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-white/75 whitespace-nowrap">London, 2026</span>
                 </div>
               </div>
@@ -691,7 +691,7 @@ export default function App() {
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-mcr-red">Finale Moment</p>
                 <div className="mt-2 flex items-end justify-between gap-3">
-                  <h3 className="text-lg md:text-2xl font-serif uppercase leading-none">Confetti Storm</h3>
+                  <h3 className="text-lg md:text-xl font-serif uppercase leading-none">Confetti Storm</h3>
                   <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-white/75 whitespace-nowrap">Mexico City, 2026</span>
                 </div>
               </div>
@@ -703,7 +703,7 @@ export default function App() {
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-[9px] md:text-[10px] uppercase tracking-[0.25em] text-mcr-red">Encore</p>
                 <div className="mt-2 flex items-end justify-between gap-3">
-                  <h3 className="text-lg md:text-2xl font-serif uppercase leading-none">Last Light</h3>
+                  <h3 className="text-lg md:text-xl font-serif uppercase leading-none">Last Light</h3>
                   <span className="text-[9px] md:text-[10px] uppercase tracking-wider text-white/75 whitespace-nowrap">Sydney, 2026</span>
                 </div>
               </div>
