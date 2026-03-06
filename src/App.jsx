@@ -342,13 +342,13 @@ const TourSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="group grid grid-cols-1 md:grid-cols-[1fr_1.5fr_2fr_1fr] gap-4 md:gap-6 py-8 md:py-10 border-b border-mcr-red/10 items-center hover:bg-mcr-red/5 transition-colors px-4 -mx-4 cursor-pointer"
+            className="group grid grid-cols-1 md:grid-cols-[1fr_1.5fr_2fr_1fr] gap-3 sm:gap-4 md:gap-6 py-6 sm:py-8 md:py-10 border-b border-mcr-red/10 items-center hover:bg-mcr-red/5 transition-colors px-4 -mx-4 cursor-pointer"
           >
-            <div className="font-mono text-base md:text-2xl leading-none tracking-tight opacity-60">{tour.date}</div>
-            <div className="text-2xl md:text-[3rem] leading-none font-serif">{tour.city}</div>
+            <div className="font-mono text-sm sm:text-base md:text-2xl leading-none tracking-tight opacity-60">{tour.date}</div>
+            <div className="text-xl sm:text-2xl md:text-[3rem] leading-none font-serif">{tour.city}</div>
             <div className="hidden md:block text-base md:text-xl leading-none text-white/40">{tour.venue}</div>
             <div className="flex justify-end items-center gap-4">
-              <span className={`text-base md:text-xl leading-none tracking-widest uppercase ${tour.status === 'SOLD OUT' ? 'text-mcr-red' : 'text-white/60'}`}>
+              <span className={`text-sm sm:text-base md:text-xl leading-none tracking-widest uppercase ${tour.status === 'SOLD OUT' ? 'text-mcr-red' : 'text-white/60'}`}>
                 {tour.status}
               </span>
               <ChevronRight size={24} className="text-mcr-red opacity-0 group-hover:opacity-100 transition-opacity" />
