@@ -258,7 +258,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-[24px] uppercase tracking-[0.8em] mb-6 block md:mt-4 font-medium text-white"
+          className="text-[24px] uppercase tracking-[0.8em] md:mb-0 mb-6 block md:mt-4 font-medium text-white"
         >
           Welcome to the
         </motion.span>
