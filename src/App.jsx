@@ -384,7 +384,7 @@ const AboutSection = () => {
         </div>
         <div className="order-1 lg:order-2 aspect-[4/5] rounded-none overflow-hidden grayscale border border-mcr-red/20">
           <img 
-            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=2070&auto=format&fit=crop" 
+            src="https://res.cloudinary.com/dqkwcbbe5/image/upload/v1772776253/gerard-way-my-chemical-romance-metlife-pr-cr-lindsey-byrnes-2025-billboard-1800_lylt1k.webp" 
             alt="The Black Parade March" 
             className="w-full h-full object-cover opacity-80"
             referrerPolicy="no-referrer"
