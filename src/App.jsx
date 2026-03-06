@@ -91,12 +91,12 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="pointer-events-none absolute left-1/2 top-1/2 mt-2 md:mt-3 -translate-x-1/2 -translate-y-1/2"
         >
           <img
-            src="https://res.cloudinary.com/dqkwcbbe5/image/upload/c_crop,g_north,w_900,h_240/v1772757588/My_Chemical_Romance_logo_dju17c.png"
+            src="https://res.cloudinary.com/dqkwcbbe5/image/upload/v1772757588/My_Chemical_Romance_logo_dju17c.png"
             alt="My Chemical Romance"
-            className="w-[200px] md:w-[290px] lg:w-[340px] h-auto object-contain"
+            className="h-[72px] md:h-[88px] lg:h-[100px] w-auto object-contain"
             loading="eager"
             decoding="async"
           />
