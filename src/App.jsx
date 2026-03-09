@@ -227,6 +227,12 @@ const BannerSection = () => {
   );
 };
 
+const GlitchTitleLine = ({ text, className = '' }) => (
+  <span className={`glitch-title-line ${className}`.trim()} data-text={text}>
+    {text}
+  </span>
+);
+
 const Hero = () => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
@@ -266,10 +272,11 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="text-[14vw] md:text-[100px] font-serif leading-none mb-48 tracking-tight"
+          className="glitch-title relative mx-auto mb-48 inline-flex text-[14vw] md:text-[100px] font-serif tracking-tight"
         >
-          Black Parade <br />
-          <span className="text-[red] opacity-80">World Tour</span>
+          <span aria-hidden="true" className="glitch-title-fragments" />
+          <GlitchTitleLine text="Black Parade" />
+          <GlitchTitleLine text="World Tour" className="text-mcr-red/90" />
         </motion.h1>
         
         <motion.div 
