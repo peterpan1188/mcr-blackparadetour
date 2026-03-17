@@ -285,12 +285,12 @@ const Hero = () => {
           transition={{ delay: 0.8 }}
           className="flex flex-col md:flex-row items-center justify-center gap-8 mt-12"
         >
-          <div className="flex items-center gap-3 text-[44px] tracking-[0.3em] uppercase opacity-60">
+          <div className="flex items-center gap-3 text-[14px] md:text-[28px]  tracking-[0.3em] uppercase opacity-60">
             <Calendar size={24} />
             <span>2026</span>
           </div>
           <div className="w-px h-4 bg-mcr-red/40 hidden md:block" />
-          <div className="flex items-center gap-3 text-[44px] tracking-[0.3em] uppercase opacity-60">
+          <div className="flex items-center gap-3 text-[14px] md:text-[28px] tracking-[0.3em] uppercase opacity-60">
             <MapPin size={24} />
             <span>Worldwide</span>
           </div>
